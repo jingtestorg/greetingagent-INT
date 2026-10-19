@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "total": 113,
+    "passed": 113,
+    "failed": 0,
+    "score": 100.0
+  },
+  "sections": [
+    {
+      "name": "Structure Tests",
+      "marker": "structure",
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "score": 100.0,
+      "tests": [
+        {"name": "test_required_files_exist", "outcome": "passed", "duration": 0.01},
+        {"name": "test_app_directory_structure", "outcome": "passed", "duration": 0.01},
+        {"name": "test_no_pylint_errors", "outcome": "passed", "duration": 15.2},
+        {"name": "test_agent_imports", "outcome": "passed", "duration": 0.5},
+        {"name": "test_requirements_files", "outcome": "passed", "duration": 0.01}
+      ]
+    },
+    {
+      "name": "Server Tests",
+      "marker": "server",
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "score": 100.0,
+      "tests": [
+        {"name": "test_agent_card_endpoint", "outcome": "passed", "duration": 3.5}
+      ]
+    },
+    {
+      "name": "Agent Tests",
+      "marker": "agent_tests",
+      "total": 107,
+      "passed": 107,
+      "failed": 0,
+      "skipped": 0,
+      "score": 100.0,
+      "coverage": 70.0,
+      "tests": [
+        {"name": "test_extracts_name_from_my_name_is", "outcome": "passed", "duration": 0.1},
+        {"name": "test_extracts_name_from_i_am", "outcome": "passed", "duration": 0.01},
+        {"name": "test_extracts_name_from_im", "outcome": "passed", "duration": 0.01},
+        {"name": "test_extracts_name_from_call_me", "outcome": "passed", "duration": 0.01},
+        {"name": "test_extracts_name_case_insensitive", "outcome": "passed", "duration": 0.01},
+        {"name": "test_returns_empty_when_no_name", "outcome": "passed", "duration": 0.01},
+        {"name": "test_returns_empty_for_empty_string", "outcome": "passed", "duration": 0.01},
+        {"name": "test_run_greeting_with_name", "outcome": "passed", "duration": 0.1},
+        {"name": "test_run_greeting_without_name_uses_default", "outcome": "passed", "duration": 0.1},
+        {"name": "test_run_greeting_llm_failure_returns_fallback", "outcome": "passed", "duration": 0.1},
+        {"name": "test_stream_yields_completed", "outcome": "passed", "duration": 0.1},
+        {"name": "test_stream_yields_processing_first", "outcome": "passed", "duration": 0.1},
+        {"name": "test_invoke_end_to_end_with_name", "outcome": "passed", "duration": 0.1},
+        {"name": "test_invoke_end_to_end_no_name", "outcome": "passed", "duration": 0.1},
+        {"name": "test_invoke_handles_llm_exception_gracefully", "outcome": "passed", "duration": 0.1}
+      ]
+    }
+  ]
+}
